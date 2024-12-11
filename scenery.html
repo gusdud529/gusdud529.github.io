@@ -1,0 +1,118 @@
+<style>
+    .clear {
+        clear: both;
+    }
+    header {
+        width: 100%;
+        height: 80px;
+        margin: 0;
+        background-color: black;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 0px;
+    }
+    #top_menu1, #top_menu2 {
+        color: white;
+        font-size: 20px;
+        padding: 0 40px;
+    }
+    #top_menu1 a, #top_menu2 a {
+        text-decoration: none;
+        color: white;
+    }
+    #menus {
+        flex-grow: 1;
+        text-align: center;
+    }
+    #main_menu {
+        font-family: '맑은고딕';
+        font-size: 20px;
+        color: white;
+        display: inline-block;
+    }
+    #main_menu li {
+        display: inline;
+        margin: 0 20px;
+        color: white;
+    }
+    #main_menu li a {
+        text-decoration: none; 
+        color: white; 
+    }
+    #contents {
+        width: 100%;
+        height: calc(100vh - 160px);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: black;
+    }
+    #item-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 80%;
+    }
+    .item {
+        width: 100%;
+        margin-bottom: 20px;
+        background-color: black;
+        text-align: center;
+    }
+    .item iframe {
+        width: 100%;
+        height: 300px;
+        border: none;
+        object-fit: cover;
+    }
+    .item .lyrics {
+        margin-top: 10px;
+        font-size: 16px;
+        line-height: 1.6;
+        color: white;
+    }
+    footer {
+        width: 100%;
+        height: 80px;
+        margin-top: 0px;
+        background-color: black;
+    }
+    footer p {
+        color: white;
+        font-size: 20px;
+        text-align: center;
+        margin: 0;
+    }
+    footer a {
+        text-decoration: none;
+    }
+</style>
+
+<body>
+    <header>
+        <div id="top_menu1"><a href="album.html">앨범</a></div>
+        <nav id="menus">
+            <ul id="main_menu">
+                <li><a href="freedom.html" style="color: white;">자유</a></li>
+                <li><a href="scenery.html" style="color: white;">이건사랑과는멀어</a></li>
+                <li><a href="instantlover.html" style="color: white;">instant lover</a></li>
+                <li><a href="love.html" style="color: white;">다신사랑하지않을다짐</a></li>
+            </ul>
+        </nav>
+        <div id="top_menu2"><a href="song.html">기타</a></div>
+    </header>
+    <section id="contents">
+        <div id="item-container">
+            <div class="item">
+                <iframe src="Scenery.mp4" allowfullscreen></iframe>
+                <div class="lyrics"><p>이건 사랑과는 멀어요</p>
+                        <p>한참을 멀어졌어요</p>
+                        <p>한 걸음에
+                            붙잡을 순 없을 것 같아요</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer><a href="index.html"><p>ALEPH</p></a></footer>
+</body>
